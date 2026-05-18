@@ -8,8 +8,8 @@ export async function GET() {
       .select({
         nama: users.nama,
         tanggal: absensi.tanggal,
-        checkIn: absensi.checkIn,
-        checkOut: absensi.checkOut,
+        checkIn: absensi.checkin,
+        checkOut: absensi.checkout,
         status: absensi.status
       })
       .from(absensi)
